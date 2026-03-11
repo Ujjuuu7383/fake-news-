@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Fact Checker</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="container">
+  <h1>🧠 AI Fact Checker</h1>
+  <p class="subtitle">Claim-aware misinformation detection</p>
+
+  <textarea id="claimInput" placeholder="Enter a claim to verify..."></textarea>
+
+  <button onclick="checkFact()">Verify Claim</button>
+
+  <div id="result" class="hidden">
+    <h2>Final Verdict</h2>
+    <div id="verdictBox"></div>
+
+    <h3>Evidence Analysis</h3>
+    <div id="analyses"></div>
+  </div>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
